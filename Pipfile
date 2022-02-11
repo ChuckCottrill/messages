@@ -4,8 +4,20 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-requests = "*"
 django = "*"
+djangorestframework = "*"
+django-split-settings = "*"
+django-widget-tweaks = "*"
+celery = "*"
+requests = "*"
+redis = "*"
+pillow = "*"
+split-settings = "*"
+"backports.weakref" = "*"
+"backports.zoneinfo" = "*"
+environs = "*"
+psycopg2 = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
