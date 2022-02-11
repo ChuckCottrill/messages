@@ -10,7 +10,6 @@ django-split-settings = "*"
 django-widget-tweaks = "*"
 celery = "*"
 requests = "*"
-redis = "*"
 pillow = "*"
 split-settings = "*"
 "backports.weakref" = "*"
@@ -18,6 +17,8 @@ split-settings = "*"
 environs = "*"
 psycopg2 = "*"
 psycopg2-binary = "*"
+django-redis = "*"
+redis = "*"
 
 [dev-packages]
 

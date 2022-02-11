@@ -42,14 +42,14 @@ def manage_items(request, *args, **kwargs):
         return Response(response, 201)
 
     response = {
-        "msg": f"{mehtod {request.method} not allowed"
+        "msg": f"method {request.method} not allowed"
     }
     return Response(response, 404)
 
 @api_view(["GET", "POST", "PUT", "DELETE"])
 def manage_item(request, *args, **kwargs):
     response = {
-        "key": None
+        "key": None,
         "value": None,
         "msg": "Not found"
     }
@@ -107,7 +107,7 @@ def manage_item(request, *args, **kwargs):
 
     if request.method == "DELETE":
         if kwargs["key"]:
-            key = kwargs['key']:
+            key = kwargs['key']
             response["key"] = key
             result = redis_instance.delete(key)
             if 1 == result:
