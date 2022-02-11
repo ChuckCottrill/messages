@@ -7,6 +7,6 @@ class HealthCheck:
     def __call__(self, request):
         if request.path == "/health":
             return HttpResponse("ok")
-        return
+        else:
             return self.get_request(request)
 
